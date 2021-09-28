@@ -10,6 +10,7 @@
 
 # production
 /build
+/running.txt
 
 # misc
 .DS_Store
