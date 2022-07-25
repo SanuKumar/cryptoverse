@@ -1,8 +1,8 @@
 :root {
-  --text-primary: #000;
+  --text-primary: #fff;
   --bgPrimary: #fff;
-  --bgSecondary: #f9f9f9;
-  --pink: #0071bd;
+  --bgSecondary: #fff;
+  --pink: #21a698;
   --light-blue: #e6f7ff;
   --border: #d9d9d9;
 }
@@ -13,8 +13,16 @@
   box-sizing: border-box;
 }
 
-a:hover {
-  color: var(--pink) !important;
+.ant-menu-item:hover {
+  background-color: #21a699d3 !important;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px rgba(215, 255, 203, 0.2);
+  box-shadow: 0 0 0 px rgba(0, 38, 70, 0.2);
+}
+
+.menu-control-container {
+  display: flex;
+  justify-content: center;
 }
 
 .app {
@@ -23,16 +31,18 @@ a:hover {
 }
 
 .navbar {
-  flex: 0.2;
-  background-color: rgb(0, 21, 41);
+  flex: 0.19;
+  background-color: #ffffff;
+  border-right: 1 solid #e6e6e6;
 }
 
 .main {
-  flex: 0.8;
+  flex: 0.948;
   width: 100%;
 }
+
 .routes {
-  padding: 20px;
+  padding: 30px;
 }
 .nav-container {
   position: fixed;
@@ -40,22 +50,24 @@ a:hover {
   margin: 10px;
   height: 100vh;
   margin: 0px;
-  background-color: rgb(0, 21, 41);
+  background-color: #ffffff;
 }
 
 .logo-container {
-  background-color: #001529;
+  background-color: #ffffff;
   display: flex;
   padding: 20px;
-  align-items: center;
   width: 100%;
 }
+
 .logo {
   margin: 0 0 0 15px;
 }
 .logo a {
+  margin: 3 0 0 0px;
   color: white;
 }
+
 .menu-control-container {
   display: none !important;
   position: absolute !important;
@@ -63,7 +75,8 @@ a:hover {
   top: 25px !important;
   font-size: 1.2rem !important;
   background-color: var(--bgSecondary) !important;
-  border: none !important;
+  border: 0.1px solid rgb(255, 255, 255) !important;
+  border-radius: 6px !important;
 }
 
 .loader {
@@ -97,10 +110,6 @@ a:hover {
     overflow: hidden;
   }
 
-  .navbar {
-    flex: 1;
-  }
-
   .main {
     flex: 1;
     margin-top: 90px;
@@ -113,7 +122,7 @@ a:hover {
     position: fixed;
     width: 100%;
     z-index: 100;
-    background-color: var(--bgSecondary);
+    background-color: var(--bgSecondary) !important;
   }
 
   .menu-control-container {
@@ -121,9 +130,11 @@ a:hover {
   }
 
   .ant-menu {
+    background-color: #ffffffe1 !important;
     position: absolute;
     right: 0px;
   }
+
   .home-title {
     font-size: 1.4rem !important;
   }
@@ -223,6 +234,10 @@ a:hover {
   color: var(--pink);
 }
 
+.coin-desc-link a:hover {
+  color: #23847b;
+}
+
 .coin-desc-link h3 {
   font-weight: 700;
 }
@@ -253,6 +268,10 @@ a:hover {
   color: var(--pink);
   font-weight: 700;
   font-size: 1rem;
+}
+
+.coin-link a:hover {
+  color: #248d83;
 }
 
 .coin-link:hover,
@@ -290,40 +309,39 @@ a:hover {
   width: 180px;
 }
 .news-card {
-  min-height: 300px !important;
+  min-height: 280px !important;
 }
 .news-image-container {
   display: flex !important;
   justify-content: space-between !important;
 }
 .news-title {
-  width: 70%;
+  width: 69%;
 }
 
-.news-image-container .img {
-  width: 100px;
-  height: 100px;
-}
 .news-card p {
   color: black;
-  margin: 10px 0px !important;
+  margin: 17px 0px !important;
+  padding-bottom: 10px;
 }
 .provider-container {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
+
 .provider-name {
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .chart-header {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  color: #0071bd;
+  color: #eee5c8;
 }
 .chart-title {
-  color: #0071bd !important;
+  color: #19b294 !important;
 }
 .price-container {
   display: flex !important;
@@ -347,6 +365,7 @@ a:hover {
 .show-more {
   margin-top: 0px !important;
 }
+
 .exchange-image {
   margin: 0px 10px !important;
 }
@@ -357,19 +376,26 @@ a:hover {
 .crypto-card-container {
   min-height: 65vh !important;
 }
+
 .crypto-card {
   min-width: 250px;
 }
-.crypto-card .crypto-image {
+.crypto-card {
   width: 35px;
 }
+
+.crypto-image {
+  height: 40px;
+  width: 40px;
+}
+
 .select-timeperiod {
   width: 200px !important;
   margin-top: 20px !important;
 }
 
 .footer {
-  background-color: #001529;
+  background-color: #f0f2f5;
   display: flex;
   flex-direction: column;
   padding: 20px;
