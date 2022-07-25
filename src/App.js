@@ -41,7 +41,7 @@ const App = () => {
             level={5}
             style={{ color: "black", textAlign: "center" }}
           >
-            3CommasVerse
+            Sanu-Cryptoverse
             <br />
             All rights reserved.
           </Typography.Title>
@@ -56,7 +56,7 @@ const App = () => {
               News
             </Link>
             <a
-              href="https://github.com/chrisstef/3CommasVerse"
+              href="https://github.com/SanuKumar"
               style={{ color: "#21A698" }}
               target="_blank"
               rel="noreferrer"
